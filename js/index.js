@@ -28,10 +28,12 @@ $(function () {
     });
 
     function banner() {
-        let imagesW = img_lenth.outerWidth();
+        // let imagesW = img_lenth.outerWidth();
+        let imagesW= $('.banner_one img').outerWidth();
         if (index == -1) {
             index = img_lenth.length - 1;
-        } else if (index == img_lenth.length) {
+        // } else if (index == img_lenth.length) {
+        } else if (index == 3) {
             index = 0;
         }
         banner_ul.stop().animate({
@@ -62,7 +64,8 @@ $(function () {
     });
 
     function Countdown() {
-        let inputTime = +new Date(time);
+        // let inputTime = +new Date(time);
+        let inputTime = +new Date('2022-10-14');
         let nowTime = +new Date();
         let s = (inputTime - nowTime) / 1000;
         let day = parseInt(s / 60 / 60 / 24);
