@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input,button{
+    outline: none;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+em,i{
+    font-style: normal;
+}
+img{
+    border: 0;
+}
